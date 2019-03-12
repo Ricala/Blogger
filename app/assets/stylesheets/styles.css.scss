@@ -1,5 +1,9 @@
-$primary_color: #AAA;
+$primary_color: rgba(55, 245, 172, 0.76);
 
+
+html {
+  background-color: rgba(10, 225, 240, 0.247);
+}
 body {
   background-color: $primary_color;
   font: {
@@ -9,12 +13,21 @@ body {
 }
 
 a {
-  color: #0000FF;
+  color: rgba(0, 195, 255, 0.87);
   img {
     border: none;
   }
 }
 
+li :hover {
+  font-style: italic;
+}
+
+h1 {
+  color:white;
+  text-align: center;
+  border: rgba(10, 225, 240, 0.247) 5px solid;
+}
 .clear {
   clear: both;
   height: 0;
@@ -22,7 +35,7 @@ a {
 }
 
 #container {
-  width: 75%;
+  width: auto;
   margin: 0 auto;
   background: #fff;
   padding: 20px 40px;
