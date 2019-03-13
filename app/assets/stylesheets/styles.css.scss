@@ -2,13 +2,18 @@ $primary_color: rgba(55, 245, 172, 0.76);
 
 
 html {
-  background-color: rgba(10, 225, 240, 0.247);
+  background-image: linear-gradient(#8cf39d9f,#3f91e480);
+  background-color: white;
+  height:100%;
+  background-size: 100%;
 }
 body {
-  background-color: $primary_color;
+  background-image: linear-gradient(#42678d,#8cf39d);
+  box-shadow: 0px 0px 15px 15px ;
   font: {
     family: Verdana, Helvetica, Arial;
-    size: 14px;
+    size: 15px;
+
   }
 }
 
@@ -19,13 +24,25 @@ a {
   }
 }
 
-li :hover {
+#articles li > a:first-child:hover {
   font-style: italic;
+  color :#29ba83
+}
+
+.comment {
+  border: solid black 1px;
+  border-radius: 5px;
+  padding-left: 15px;
+  box-shadow: inset 0px 0px 2px 2px #29ba83;
+  color:black;
 }
 
 h1 {
+  background-image: linear-gradient(#42678d,#8cf39d);
   color:white;
+  text-shadow: 3px 4px 5px #000;
   text-align: center;
+  font-size: 2.2em;
   border: rgba(10, 225, 240, 0.247) 5px solid;
 }
 .clear {
@@ -41,6 +58,7 @@ h1 {
   padding: 20px 40px;
   border: solid 1px black;
   margin-top: 20px;
+  
 }
 
 #content {
